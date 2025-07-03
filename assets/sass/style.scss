@@ -7,6 +7,12 @@ $white: #ffffff;
 $black: #000000;
 $text-font: "Comic Sans MS", cursive, sans-serif;
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .bgcolor {
   &--primary {
     background-color: $primary-green;

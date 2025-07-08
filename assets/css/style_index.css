@@ -1,0 +1,199 @@
+/* INDEX.HTML */
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+nav ul {
+  list-style: none;
+  gap: 1rem;
+  flex-direction: row;
+}
+.ficha__imagen {
+  max-width: 100%;
+  height: auto;
+}
+.--bg-color1 {
+  background-color: #537d5d;
+}
+.--bg-color2 {
+  background-color: #73946b;
+}
+.--bg-color3 {
+  background-color: #9ebc8a;
+}
+.--bg-color4 {
+  background-color: #d2d0a0;
+}
+.--texto-blanco {
+  color: white;
+}
+.--texto-negro {
+  color: black;
+}
+
+.navegacion {
+  padding: 0.5rem;
+}
+.navegacion__menu {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  justify-content: end;
+}
+.navegacion__item {
+  font-size: 1rem;
+}
+.navegacion__link {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 20px;
+}
+.navegacion__link:hover {
+  background-color: #d2d0a0;
+  color: black;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+}
+.hero__logo {
+  align-self: center;
+  height: 30%;
+  width: 30%;
+}
+.hero__titulo {
+  text-align: center;
+  padding-left: 4em;
+  padding-right: 4em;
+  margin: 1rem 0;
+  font-size: xx-large;
+}
+.hero__descripcion {
+  text-align: center;
+  padding: 6rem;
+  margin: 1rem 0;
+}
+.hero__botones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.hero__boton {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  border: 0;
+}
+.hero__boton:hover {
+  background-color: #d2d0a0;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.novedades {
+  padding: 2rem;
+  text-align: center;
+}
+
+.contacto {
+  padding: 40px 20px;
+}
+
+.contacto__container {
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contacto__titulo {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+.contacto__boton {
+  padding: 12px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contacto__boton:hover {
+  background-color: #73946b;
+}
+
+.footer {
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Ficha principal */
+.ficha {
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 40px auto;
+}
+
+.ficha__imagen {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Contenido de la ficha */
+.ficha__contenido {
+  padding: 20px;
+}
+
+.ficha__titulo {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.ficha__autor {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.ficha__descripcion {
+  margin-bottom: 15px;
+}
+
+.ficha__info {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Botón de WhatsApp */
+.ficha__boton {
+  display: inline-block;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.ficha__boton:hover {
+  background-color: #73946b;
+}

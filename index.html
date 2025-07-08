@@ -5,41 +5,87 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>VerdeModa</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
-</head>
+  <link rel="stylesheet" href="/assets/css/style_index.css">
 
-<body class="body bgcolor--fourth">
-  <header class="header header--center bgcolor--primary">
-    <div class="header__title--uppercase">
-      <h1>verdemoda</h1>
-    </div>
-    <div>
-      <nav>
-        <ul class="nav__list bgcolor--primary">
-          <li class="nav__item bgcolor--secondary"><a class="nav__link" href="/productos.html">Productos</a></li>
-          <li class="nav__item bgcolor--secondary"><a class="nav__link" href="/pedidos.html">Pedidos</a></li>
-          <li class="nav__item bgcolor--secondary"><a class="nav__link" href="/clientes.html">Clientes</a></li>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <!-- descripcion -->
-    <div class="bgcolor--secondary">
-      <h2>Sobre Nosotros</h2>
-      <p id="descripcion-texto">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum
-        fugit quaerat fuga labore excepturi expedita debitis delectus
-        assumenda sit dicta qui totam velit placeat modi, illum voluptatibus
-        quibusdam quam natus?
+<body>
+  <!--header-->
+  <header>
+    <!--navbar-->
+    <nav class="navegacion --bg-color1">
+      <ul class="navegacion__menu --texto-negro --bg-color1">
+        <li class="navegacion__item">
+          <a class="navegacion__link --bg-color2 --texto-negro" href="#inicio">Inicio</a>
+        </li>
+        <li class="navegacion__item">
+          <a class="navegacion__link --bg-color2 --texto-negro" href="catalogo.html">Catálogo</a>
+        </li>
+        <li class="navegacion__item">
+          <a class="navegacion__link --bg-color2 --texto-negro" href="#novedades">Novedades</a>
+        </li>
+        <li class="navegacion__item">
+          <a class="navegacion__link --bg-color2 --texto-negro" href="">Nosotros</a>
+        </li>
+      </ul>
+    </nav>
+    <!--hero seccion-->
+    <section class="hero --bg-color2">
+      <img src="/assets/img/logohero.png" alt="logoropa" class="hero__logo">
+      <h1 class="hero__titulo">VerdeModa</h1>
+      <p class="hero__descripcion --texto-negro">
+        Bienvenido a VerdeModa: donde la energía joven y la moda sostenible se fusionan para darle nueva vida a cada
+        prenda. Nuestro emprendimiento recupera piezas con historia, las reinventa con creatividad y las convierte en
+        artículos únicos que reflejan tu estilo y cuidan el planeta. Descubre una experiencia de moda responsable creada
+        por jóvenes que sueñan con un futuro más verde.
       </p>
-    </div>
-    <!--  link contacto -->
-    <div class="bgcolor--third">
-      <a href="/contacto.html" target="_blank">Formulario de contacto</a>
-    </div>
+      <div class="hero__botones">
+        <a class="hero__boton --bg-color3 --texto-negro" href="#contacto">
+          Contacto
+        </a>
+        <a class="hero__boton --bg-color3 --texto-negro" href="">
+          Sobre Nosotros
+        </a>
+      </div>
+      <!--fin hero seccion-->
+    </section>
+  </header>
+  <!--main-->
+  <main>
+    <section class="novedades --bg-color3" id="novedades">
+      <h2>Productos destacados</h2>
+      <p>
+        Revisa nuestros productos destacados
+      </p>
+      <div class="novedades__opciones">
+        <input type="checkbox" id="vestuario" name="vestuario" />
+        <label for="vestuario">Vestuario</label>
+        <input type="checkbox" id="accesorios" name="accesorios" checked />
+        <label for="accesorios">Accesorios</label>
+        <input type="checkbox" id="zapatos" name="zapatos" />
+        <label for="zapatos">Zapatos</label>
+      </div>
+      <div class="novedades__imagen"></div>
+      <article class="ficha ficha--recurso --bg-color4">
+        <img src="https://www.nicepng.com/png/detail/412-4122544_botones-de-ropa-png-boton-de-coser-animado.png"
+          alt="Portada del recurso" class="ficha__imagen">
+        <div class="ficha__contenido">
+          <h3 class="ficha__titulo">Botón Rosa</h3>
+          <p class="ficha__autor">1 unidad</p>
+          <p class="ficha__info">$ 99.990</p>
+          <a href="" class="ficha__boton --bg-color1 --texto-blanco">Más información</a>
+        </div>
+      </article>
+    </section>
+    <!--contacto-->
+    <section class="contacto  --bg-color4" id="contacto">
+      <div class="contacto__container">
+        <h2 class="contacto__titulo">Contáctanos por WhatsApp</h2>
+        <button class="contacto__boton --bg-color1 --texto-blanco">Enviar Whatsapp</button>
+      </div>
+    </section>
   </main>
-  <footer class="bgcolor--primary">
-    <p>VerdeModa - 2025</p>
+  <footer class="footer --bg-color1">
+    <p>&copy 2025 VerdeModa</p>
   </footer>
 </body>
+
 </html>

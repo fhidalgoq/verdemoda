@@ -12,25 +12,26 @@
   <header>
     <!--navbar-->
     <nav class="navegacion --bg-color1">
-      <ul class="navegacion__menu --texto-negro --bg-color1">
-        <li class="navegacion__item">
-          <a class="navegacion__link --bg-color2 --texto-negro" href="#inicio">Inicio</a>
-        </li>
-        <li class="navegacion__item">
-          <a class="navegacion__link --bg-color2 --texto-negro" href="catalogo.html">Catálogo</a>
-        </li>
-        <li class="navegacion__item">
-          <a class="navegacion__link --bg-color2 --texto-negro" href="#novedades">Novedades</a>
-        </li>
-        <li class="navegacion__item">
-          <a class="navegacion__link --bg-color2 --texto-negro" href="">Nosotros</a>
-        </li>
-      </ul>
+      <div class="navegacion__logo">
+        <h1 class="navegacion__titulo">Verde Moda</h1>
+        <ul class="navegacion__menu --texto-negro --bg-color1">
+          <li class="navegacion__item">
+            <a class="navegacion__link --bg-color2 --texto-negro" href="#inicio">Inicio</a>
+          </li>
+          <li class="navegacion__item">
+            <a class="navegacion__link --bg-color2 --texto-negro" href="catalogo.html">Catálogo</a>
+          </li>
+          <li class="navegacion__item">
+            <a class="navegacion__link --bg-color2 --texto-negro" href="#novedades">Novedades</a>
+          </li>
+          <li class="navegacion__item">
+            <a class="navegacion__link --bg-color2 --texto-negro" href="">Nosotros</a>
+          </li>
+        </ul>
     </nav>
     <!--hero seccion-->
     <section class="hero --bg-color2">
       <img src="./assets/img/logohero.png" alt="logoropa" class="hero__logo">
-      <h1 class="hero__titulo">VerdeModa</h1>
       <p class="hero__descripcion --texto-negro">
         Bienvenido a VerdeModa: donde la energía joven y la moda sostenible se fusionan para darle nueva vida a cada
         prenda. Nuestro emprendimiento recupera piezas con historia, las reinventa con creatividad y las convierte en
@@ -83,9 +84,36 @@
       </div>
     </section>
   </main>
+  <!--footer-->
   <footer class="footer --bg-color1">
-    <p>&copy 2025 VerdeModa</p>
+    <div class="footer__container">
+      <p class="footer__copy">&copy; 2025 VerdeModa. Todos los derechos reservados.</p>
+      <ul class="footer__redes">
+        <li class="footer__item">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/500px-Instagram_icon.png"
+              alt="Instagram" class="footer__icono" />
+          </a>
+        </li>
+        <li class="footer__item">
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Facebook_logo_%28square%29.png/960px-Facebook_logo_%28square%29.png"
+              alt="Facebook" class="footer__icono" />
+          </a>
+        </li>
+        <li class="footer__item">
+          <a href="https://cl.linkedin.com/" target="_blank" rel="noopener">
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/018/930/480/non_2x/linkedin-logo-linkedin-icon-transparent-free-png.png"
+              alt="LinkedIn" class="footer__icono" />
+          </a>
+        </li>
+      </ul>
+    </div>
   </footer>
+
 </body>
 
 </html>

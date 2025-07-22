@@ -8,30 +8,38 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
 }
+
 nav ul {
   list-style: none;
   gap: 1rem;
   flex-direction: row;
 }
+
 .ficha__imagen {
   max-width: 100%;
   height: auto;
 }
+
 .--bg-color1 {
   background-color: #537d5d;
 }
+
 .--bg-color2 {
   background-color: #73946b;
 }
+
 .--bg-color3 {
   background-color: #9ebc8a;
 }
+
 .--bg-color4 {
   background-color: #d2d0a0;
 }
+
 .--texto-blanco {
   color: white;
 }
+
 .--texto-negro {
   color: black;
 }
@@ -39,36 +47,51 @@ nav ul {
 .navegacion {
   padding: 0.5rem;
 }
+
+.navegacion__titulo {
+  font-size: xx-large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6rem;
+}
+
 .navegacion__menu {
   display: flex;
   gap: 1rem;
   list-style: none;
   padding: 0;
-  justify-content: end;
+  justify-content: space-evenly;
 }
+
 .navegacion__item {
   font-size: 1rem;
 }
+
 .navegacion__link {
   padding: 0.5rem 1rem;
   text-decoration: none;
   border-radius: 20px;
 }
+
 .navegacion__link:hover {
   background-color: #d2d0a0;
   color: black;
   transition: background-color 0.3s ease;
   cursor: pointer;
 }
+
 .hero {
   display: flex;
   flex-direction: column;
 }
+
 .hero__logo {
   align-self: center;
   height: 30%;
   width: 30%;
 }
+
 .hero__titulo {
   text-align: center;
   padding-left: 4em;
@@ -76,16 +99,19 @@ nav ul {
   margin: 1rem 0;
   font-size: xx-large;
 }
+
 .hero__descripcion {
   text-align: center;
   padding: 6rem;
   margin: 1rem 0;
 }
+
 .hero__botones {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
+
 .hero__boton {
   padding: 0.5rem 1rem;
   text-decoration: none;
@@ -93,12 +119,14 @@ nav ul {
   margin-bottom: 1rem;
   border: 0;
 }
+
 .hero__boton:hover {
   background-color: #d2d0a0;
   transition: background-color 0.3s ease;
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 .novedades {
   padding: 2rem;
   text-align: center;
@@ -123,6 +151,7 @@ nav ul {
   text-align: center;
   font-weight: bold;
 }
+
 .contacto__boton {
   padding: 12px;
   font-weight: bold;
@@ -196,4 +225,52 @@ nav ul {
 
 .ficha__boton:hover {
   background-color: #73946b;
+}
+
+.footer {
+  padding: 16px 0px;
+  width: 100%;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.footer__copy {
+  font-size: 14px;
+  color: #333;
+  text-align: right;
+}
+
+.footer__redes {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__item {
+  display: flex;
+  align-items: center;
+}
+
+.footer__icono {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.2s ease;
+}
+
+.footer__icono:hover {
+  transform: scale(1.1);
+}
+
+.footer__texto {
+  display: none;
 }

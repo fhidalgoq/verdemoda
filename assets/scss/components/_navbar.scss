@@ -1,0 +1,47 @@
+@use "../abstracts/variables" as *;
+
+nav {
+    ul {
+        list-style: none;
+        gap: 1rem;
+        flex-direction: row;
+    }
+}
+
+// Main navigation
+.navegacion {
+    padding: 0.5rem;
+
+    &__titulo {
+        font-size: xx-large;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 6rem;
+    }
+
+    &__menu {
+        display: flex;
+        gap: 1rem;
+        list-style: none;
+        padding: 0;
+        justify-content: space-evenly;
+    }
+
+    &__item {
+        font-size: 1rem;
+    }
+
+    &__link {
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        border-radius: 20px;
+
+        &:hover {
+            background-color: $bg-color4;
+            color: $black;
+            transition: $transition-bg;
+            cursor: pointer;
+        }
+    }
+}

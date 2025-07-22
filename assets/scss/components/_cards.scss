@@ -1,0 +1,56 @@
+@use "../abstracts/variables" as *;
+
+// Main card (ficha)
+.ficha {
+    border-radius: 12px;
+    box-shadow: $box-shadow-light;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 40px auto;
+
+    &__imagen {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    &__contenido {
+        padding: 20px;
+    }
+
+    &__titulo {
+        font-size: 1.8rem;
+        color: #2c3e50;
+        margin-bottom: 10px;
+    }
+
+    &__autor {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    &__descripcion {
+        margin-bottom: 15px;
+    }
+
+    &__info {
+        font-style: italic;
+        color: #666;
+        margin-bottom: 20px;
+    }
+
+    &__boton {
+        display: inline-block;
+        padding: 12px 20px;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: bold;
+        transition: $transition-bg;
+
+        &:hover {
+            background-color: $bg-color2;
+        }
+    }
+}

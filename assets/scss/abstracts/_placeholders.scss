@@ -1,0 +1,26 @@
+// _placeholders.scss
+@use "./variables" as *;
+
+.--bg-color1 {
+    background-color: $bg-color1;
+}
+
+.--bg-color2 {
+    background-color: $bg-color2;
+}
+
+.--bg-color3 {
+    background-color: $bg-color3;
+}
+
+.--bg-color4 {
+    background-color: $bg-color4;
+}
+
+.--texto-blanco {
+    color: $white;
+}
+
+.--texto-negro {
+    color: $black;
+}

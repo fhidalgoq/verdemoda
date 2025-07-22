@@ -1,0 +1,47 @@
+@use "../abstracts/variables" as *;
+
+// Hero section
+.hero {
+    display: flex;
+    flex-direction: column;
+
+    &__logo {
+        align-self: center;
+        height: 30%;
+        width: 30%;
+    }
+
+    &__titulo {
+        text-align: center;
+        padding: 0 4em;
+        margin: 1rem 0;
+        font-size: xx-large;
+    }
+
+    &__descripcion {
+        text-align: center;
+        padding: 6rem;
+        margin: 1rem 0;
+    }
+
+    &__botones {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    &__boton {
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        border-radius: 4px;
+        margin-bottom: 1rem;
+        border: 0;
+
+        &:hover {
+            background-color: $bg-color4;
+            transition: $transition-bg;
+            cursor: pointer;
+            box-shadow: $box-shadow-hov;
+        }
+    }
+}

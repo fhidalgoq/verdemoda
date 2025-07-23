@@ -109,11 +109,36 @@ nav ul {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.main {
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(148, 148, 148);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+}
+
 .novedades {
   padding: 2rem;
   text-align: center;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 1150px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 770px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .ficha {
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -158,6 +183,7 @@ nav ul {
 }
 .ficha__boton:hover {
   background-color: #73946b;
+  cursor: pointer;
 }
 
 .contacto {
@@ -169,6 +195,7 @@ nav ul {
   border-radius: 8px;
   padding: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(148, 148, 148);
   text-align: center;
 }
 .contacto__titulo {
@@ -192,15 +219,15 @@ nav ul {
 .footer {
   text-align: center;
   font-weight: bold;
-  padding: 16px 0;
+  margin-top: 50px;
   width: 100%;
+  height: 100px;
   box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
 }
 .footer__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
   margin: 0 auto;
   flex-wrap: wrap;
 }
@@ -214,6 +241,7 @@ nav ul {
   display: flex;
   gap: 16px;
   padding: 0;
+  padding-right: 20px;
   margin: 0;
 }
 .footer__item {

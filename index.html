@@ -7,81 +7,140 @@
   <title>VerdeModa</title>
   <link rel="stylesheet" href="./assets/css/style.css">
 
-<body>
-  <!--header-->
+<body class=" --bg-color4">
   <header>
     <!--navbar-->
     <nav class="navegacion --bg-color1">
       <div class="navegacion__logo">
-        <h1 class="navegacion__titulo">Verde Moda</h1>
+        <h1 class="navegacion__titulo" id="titulo">Verde Moda</h1>
         <ul class="navegacion__menu --texto-negro --bg-color1">
           <li class="navegacion__item">
-            <a class="navegacion__link --bg-color2 --texto-negro" href="#inicio">Inicio</a>
+            <a class="navegacion__link --bg-color2 --texto-negro" href="#titulo">Inicio</a>
           </li>
           <li class="navegacion__item">
-            <a class="navegacion__link --bg-color2 --texto-negro" href="catalogo.html">Catálogo</a>
+            <a class="navegacion__link --bg-color2 --texto-negro" href="#catalogo">Catálogo</a>
           </li>
           <li class="navegacion__item">
             <a class="navegacion__link --bg-color2 --texto-negro" href="#novedades">Novedades</a>
           </li>
           <li class="navegacion__item">
-            <a class="navegacion__link --bg-color2 --texto-negro" href="">Nosotros</a>
+            <a class="navegacion__link --bg-color2 --texto-negro" href="#hero">Nosotros</a>
           </li>
         </ul>
     </nav>
+    <!--fin navbar-->
     <!--hero seccion-->
-    <section class="hero --bg-color2">
+    <section class="hero --bg-color2" id="hero">
       <img src="./assets/img/logohero.png" alt="logoropa" class="hero__logo">
       <p class="hero__descripcion --texto-negro">
         Bienvenido a VerdeModa: donde la energía joven y la moda sostenible se fusionan para darle nueva vida a cada
         prenda. Nuestro emprendimiento recupera piezas con historia, las reinventa con creatividad y las convierte en
-        artículos únicos que reflejan tu estilo y cuidan el planeta. Descubre una experiencia de moda responsable creada
+        artículos únicos que reflejan tu estilo y cuidan el planeta. Descubre una experiencia de moda responsable
+        creada
         por jóvenes que sueñan con un futuro más verde.
       </p>
       <div class="hero__botones">
         <a class="hero__boton --bg-color3 --texto-negro" href="#contacto">
           Contacto
         </a>
-        <a class="hero__boton --bg-color3 --texto-negro" href="">
+        <a class="hero__boton --bg-color3 --texto-negro" href="#hero">
           Sobre Nosotros
         </a>
       </div>
-      <!--fin hero seccion-->
     </section>
+    <!--fin hero seccion-->
   </header>
-  <!--main-->
   <main>
-    <section class="novedades --bg-color3" id="novedades">
-      <h2>Productos destacados</h2>
-      <p>
-        Revisa nuestros productos destacados
-      </p>
-      <div class="novedades__opciones">
-        <input type="checkbox" id="vestuario" name="vestuario" />
-        <label for="vestuario">Vestuario</label>
-        <input type="checkbox" id="accesorios" name="accesorios" checked />
-        <label for="accesorios">Accesorios</label>
-        <input type="checkbox" id="zapatos" name="zapatos" />
-        <label for="zapatos">Zapatos</label>
-      </div>
-      <div class="novedades__imagen"></div>
-      <article class="ficha ficha--recurso --bg-color4">
-        <img src="./assets/img/boton.jpg" alt="Boton rosa" class="ficha__imagen">
-        <div class="ficha__contenido">
-          <h3 class="ficha__titulo">Botón Rosa</h3>
-          <p class="ficha__autor">1 unidad</p>
-          <p class="ficha__info">$ 99.990</p>
-          <a href="" class="ficha__boton --bg-color1 --texto-blanco">Más información</a>
+    <div class="main">
+      <!--novedades-->
+      <section class="novedades --bg-color3" id="novedades">
+        <h2>Productos destacados</h2>
+        <p>
+          Revisa nuestros productos destacados
+        </p>
+        <div class="novedades__opciones">
+          <input type="checkbox" id="vestuario" name="vestuario" />
+          <label for="vestuario">Vestuario</label>
+          <input type="checkbox" id="accesorios" name="accesorios" checked />
+          <label for="accesorios">Accesorios</label>
+          <input type="checkbox" id="zapatos" name="zapatos" />
+          <label for="zapatos">Zapatos</label>
         </div>
-      </article>
-    </section>
-    <!--contacto-->
-    <section class="contacto  --bg-color4" id="contacto">
-      <div class="contacto__container">
-        <h2 class="contacto__titulo">Contáctanos por WhatsApp</h2>
-        <button class="contacto__boton --bg-color1 --texto-blanco">Enviar Whatsapp</button>
-      </div>
-    </section>
+        <div class="novedades__imagen"></div>
+        <article class="ficha ficha--recurso --bg-color4">
+          <img src="./assets/img/boton.jpg" alt="Boton rosa" class="ficha__imagen">
+          <div class="ficha__contenido">
+            <h3 class="ficha__titulo">Botón Rosa</h3>
+            <p class="ficha__autor">1 unidad</p>
+            <p class="ficha__info">$ 99.990</p>
+            <a class="ficha__boton --bg-color1 --texto-blanco">Más información</a>
+          </div>
+        </article>
+      </section>
+      <section class="grid --bg-color3" id="catalogo">
+        <article class="ficha ficha--recurso --bg-color4">
+          <img src="./assets/img/boton_amarillo.jpg" alt="Boton rosa" class="ficha__imagen">
+          <div class="ficha__contenido">
+            <h3 class="ficha__titulo">Botón Amarillo</h3>
+            <p class="ficha__autor">1 unidad</p>
+            <p class="ficha__info">$ 99.990</p>
+            <a class="ficha__boton --bg-color1 --texto-blanco">Más información</a>
+          </div>
+        </article>
+        <article class="ficha ficha--recurso --bg-color4">
+          <img src="./assets/img/boton_azul.jpg" alt="Boton rosa" class="ficha__imagen">
+          <div class="ficha__contenido">
+            <h3 class="ficha__titulo">Botón Azul</h3>
+            <p class="ficha__autor">1 unidad</p>
+            <p class="ficha__info">$ 99.990</p>
+            <a class="ficha__boton --bg-color1 --texto-blanco">Más información</a>
+          </div>
+        </article>
+        <article class="ficha ficha--recurso --bg-color4">
+          <img src="./assets/img/boton_celeste.jpg" alt="Boton rosa" class="ficha__imagen">
+          <div class="ficha__contenido">
+            <h3 class="ficha__titulo">Botón Celeste</h3>
+            <p class="ficha__autor">1 unidad</p>
+            <p class="ficha__info">$ 99.990</p>
+            <a class="ficha__boton --bg-color1 --texto-blanco">Más información</a>
+          </div>
+        </article>
+        <article class="ficha ficha--recurso --bg-color4">
+          <img src="./assets/img/boton_fucsia.jpg" alt="Boton rosa" class="ficha__imagen">
+          <div class="ficha__contenido">
+            <h3 class="ficha__titulo">Botón Fucsia</h3>
+            <p class="ficha__autor">1 unidad</p>
+            <p class="ficha__info">$ 99.990</p>
+            <a class="ficha__boton --bg-color1 --texto-blanco">Más información</a>
+          </div>
+        </article>
+        <article class="ficha ficha--recurso --bg-color4">
+          <img src="./assets/img/boton_verde.jpg" alt="Boton rosa" class="ficha__imagen">
+          <div class="ficha__contenido">
+            <h3 class="ficha__titulo">Botón Verde</h3>
+            <p class="ficha__autor">1 unidad</p>
+            <p class="ficha__info">$ 99.990</p>
+            <a class="ficha__boton --bg-color1 --texto-blanco">Más información</a>
+          </div>
+        </article>
+        <article class="ficha ficha--recurso --bg-color4">
+          <img src="./assets/img/boton_rojo.jpg" alt="Boton rosa" class="ficha__imagen">
+          <div class="ficha__contenido">
+            <h3 class="ficha__titulo">Botón Rojo</h3>
+            <p class="ficha__autor">1 unidad</p>
+            <p class="ficha__info">$ 99.990</p>
+            <a class="ficha__boton --bg-color1 --texto-blanco">Más información</a>
+          </div>
+        </article>
+      </section>
+      <!--contacto-->
+      <section class="contacto  --bg-color4" id="contacto">
+        <div class="contacto__container">
+          <h2 class="contacto__titulo">Contáctanos por WhatsApp</h2>
+          <button class="contacto__boton --bg-color1 --texto-blanco">Enviar Whatsapp</button>
+        </div>
+      </section>
+    </div>
   </main>
   <!--footer-->
   <footer class="footer --bg-color1">

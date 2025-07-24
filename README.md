@@ -1,9 +1,17 @@
 # Proyecto de tienda VerdeModa
 
-Correspondiente al trabajo M3AE1-ABP5 del módulo 3.
+Proyecto de tienda VerdeModa correspondiente al trabajo M3AE1-ABP5 del módulo 3. Esta tienda implementa un catálogo de productos con énfasis en diseño responsivo y componentes reutilizables.
 
-# Cambios ABP5
--> Integración de Bootstrap de forma local
-    ->Instalable para modificaciones en SASS mediante npm install bootstrap en carpeta raíz
--> Uso de grid de bootstrap para disposicion de elementos
--> Cambios de footer y navbar por elementos de Bootstrap
+---
+
+## Descripción
+
+La versión ABP5 introduce la integración local de Bootstrap 5.3 para facilitar la personalización vía SASS. El diseño se apoya en el sistema de grid de Bootstrap y los componentes de navbar y footer han sido reemplazados por sus equivalentes nativos del framework.
+
+---
+
+## Cambios en ABP5
+
+- Integración de Bootstrap de forma local.  
+- Instalación de Bootstrap vía npm install bootstrap
+- Uso de elementos grid, navbar y footer de Bootstrap

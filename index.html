@@ -8,47 +8,41 @@
   <link rel="stylesheet" href="./assets/css/style.css">
 
 <body class=" --bg-color4">
-  <header>
-    <!--navbar-->
-    <nav class="navegacion --bg-color1">
-      <div class="navegacion__logo">
-        <h1 class="navegacion__titulo" id="titulo">Verde Moda</h1>
-        <ul class="navegacion__menu --texto-negro --bg-color1">
-          <li class="navegacion__item">
-            <a class="navegacion__link --bg-color2 --texto-negro" href="#titulo">Inicio</a>
-          </li>
-          <li class="navegacion__item">
-            <a class="navegacion__link --bg-color2 --texto-negro" href="#catalogo">Catálogo</a>
-          </li>
-          <li class="navegacion__item">
-            <a class="navegacion__link --bg-color2 --texto-negro" href="#novedades">Novedades</a>
-          </li>
-          <li class="navegacion__item">
-            <a class="navegacion__link --bg-color2 --texto-negro" href="#hero">Nosotros</a>
-          </li>
+  <header class="--bg-color1">
+    <div class="container">
+      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"> <a href="/"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"> <svg
+            class="bi me-2" width="40" height="32" aria-hidden="true">
+            <use xlink:href="#bootstrap"></use>
+          </svg> <span class="fs-4">Verde Moda</span> </a>
+        <ul class="nav nav-pills">
+          <li class="navegacion__item"><a href="#" class="navegacion__link --bg-color2 --texto-negro">Inicio</a></li>
+          <li class="navegacion__item"><a href="#" class="navegacion__link --bg-color2 --texto-negro">Catálogo</a></li>
+          <li class="navegacion__item"><a href="#" class="navegacion__link --bg-color2 --texto-negro">Novedades</a></li>
+          <li class="navegacion__item"><a href="#" class="navegacion__link --bg-color2 --texto-negro">Nosotros</a></li>
         </ul>
-    </nav>
-    <!--fin navbar-->
-    <!--hero seccion-->
-    <section class="hero --bg-color2" id="hero">
-      <img src="./assets/img/logohero.png" alt="logoropa" class="hero__logo">
-      <p class="hero__descripcion --texto-negro">
-        Bienvenido a VerdeModa: donde la energía joven y la moda sostenible se fusionan para darle nueva vida a cada
-        prenda. Nuestro emprendimiento recupera piezas con historia, las reinventa con creatividad y las convierte en
-        artículos únicos que reflejan tu estilo y cuidan el planeta. Descubre una experiencia de moda responsable
-        creada
-        por jóvenes que sueñan con un futuro más verde.
-      </p>
-      <div class="hero__botones">
-        <a class="hero__boton --bg-color3 --texto-negro" href="#contacto">
-          Contacto
-        </a>
-        <a class="hero__boton --bg-color3 --texto-negro" href="#hero">
-          Sobre Nosotros
-        </a>
+      </header>
+    </div>
+
+    <div class="px-4 py-5 my-5 text-center --bg-color1"> <img src="./assets/img/logohero.png" alt="logoropa"
+        class="hero__logo">
+      <h1 class="display-5 fw-bold text-body-emphasis">Verde Moda</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">Bienvenido a VerdeModa: donde la energía joven y la moda sostenible se fusionan para darle
+          nueva vida a cada
+          prenda. Nuestro emprendimiento recupera piezas con historia, las reinventa con creatividad y las convierte en
+          artículos únicos que reflejan tu estilo y cuidan el planeta. Descubre una experiencia de moda responsable
+          creada
+          por jóvenes que sueñan con un futuro más verde.</p>
+        <div class="hero__botones">
+          <a class="hero__boton --bg-color3 --texto-negro" href="#contacto">
+            Contacto
+          </a>
+          <a class="hero__boton --bg-color3 --texto-negro" href="#hero">
+            Sobre Nosotros
+          </a>
+        </div>
       </div>
-    </section>
-    <!--fin hero seccion-->
   </header>
   <main>
     <div class="main">
@@ -171,6 +165,27 @@
       </ul>
     </div>
   </footer>
+
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center"> <a href="/"
+          class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="Bootstrap"> <svg
+            class="bi" width="30" height="24" aria-hidden="true">
+            <use xlink:href="#bootstrap"></use>
+          </svg> </a> <span class="mb-3 mb-md-0 text-body-secondary">© 2025 Company, Inc</span> </div>
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-body-secondary" href="#" aria-label="Instagram"><img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/500px-Instagram_icon.png"
+              alt="Instagram" class="footer__icono" /></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#" aria-label="Facebook"><img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Facebook_logo_%28square%29.png/960px-Facebook_logo_%28square%29.png"
+              alt="Facebook" class="footer__icono" /></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#" aria-label="Facebook"><img
+              src="https://static.vecteezy.com/system/resources/previews/018/930/480/non_2x/linkedin-logo-linkedin-icon-transparent-free-png.png"
+              alt="LinkedIn" class="footer__icono" /></a></li>
+      </ul>
+    </footer>
+  </div>
 
 </body>
 
